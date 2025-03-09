@@ -1,65 +1,13 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MGZ</title>
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <iframe src="https://script.google.com/macros/s/AKfycbxIjDRbP6r-ioqDbhDb0hGdwce8UHryKQ3kPy8fWHhcQZP003zA21NMaR4Ui_cmTiZB/exec" style="position:fixed; top:0; left:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detectar Tamaño de Pantalla</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        #screenInfo {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-
-        @media (max-width: 768px) {
-            #mediaInfo {
-                color: blue;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            #mediaInfo {
-                color: green;
-            }
-        }
-
-        @media (min-width: 1025px) {
-            #mediaInfo {
-                color: red;
-            }
-        }
-    </style>
-</head>
-<body>
-    <h2>Detectar Tamaño de Pantalla</h2>
-    <label id="screenInfo">Tamaño de la pantalla: </label>
-    <br/>
-    <label id="mediaInfo">Media query aplicada: </label>
-<br/>
-    <script>
-        function updateScreenInfo() {
-            const screenInfo = document.getElementById('screenInfo');
-            const mediaInfo = document.getElementById('mediaInfo');
-            const width = window.innerWidth;
-
-            screenInfo.textContent = `Tamaño de la pantalla: ${width}px`;
-
-            if (width <= 768) {
-                mediaInfo.textContent = 'Media query aplicada: max-width: 768px';
-            } else if (width >= 769 && width <= 1024) {
-                mediaInfo.textContent = 'Media query aplicada: min-width: 769px y max-width: 1024px';
-            } else {
-                mediaInfo.textContent = 'Media query aplicada: min-width: 1025px';
-            }
-        }
-
-        window.addEventListener('resize', updateScreenInfo);
-        window.addEventListener('load', updateScreenInfo);
-    </script>
-</body>
-</html>
+    </body>
+    </html>
